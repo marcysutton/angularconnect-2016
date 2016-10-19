@@ -6,6 +6,8 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
     files: [
+      'node_modules/axe-core/axe.js',
+      
       // Polyfills.
       'node_modules/es6-shim/es6-shim.js',
 
@@ -26,7 +28,6 @@ module.exports = function(config) {
       // RxJs.
       { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
       { pattern: 'node_modules/rxjs/**/*.js.map', included: false, watched: false },
-
 
       {pattern: 'config/karma-test-shim.js', included: true, watched: true},
 
